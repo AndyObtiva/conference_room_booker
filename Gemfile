@@ -32,9 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
-gem 'rxjs-rails'
 gem 'sprockets', '>= 3.0.0'
-gem 'sprockets-es6', require: 'sprockets/es6'
+gem 'sprockets-es6'
+gem "browserify-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
