@@ -1,0 +1,59 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="673.22833" height="318.89764" id="svg2">
+  <title id="title3010">Floor plans of Buda castle</title>
+  <defs id="defs4"></defs>
+  <metadata id="metadata7">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        <dc:title>Floor plans of Buda castle</dc:title>
+        <dc:date>20131210</dc:date>
+        <dc:creator>
+          <cc:agent>
+            <dc:title>Göran Jönsson</dc:title>
+          </cc:agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:agent>
+            <dc:title>Göran Jönsson</dc:title>
+          </cc:agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:agent>
+            <dc:title>Göran Jönsson</dc:title>
+          </cc:agent>
+        </dc:publisher>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"></cc:license>
+        <dc:identifier>Floor plans of Buda Castle</dc:identifier>
+      </cc:work>
+      <cc:license rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"></cc:requires>
+      </cc:license>
+    </rdf:rdf>
+  </metadata>
+  <g transform="translate(0,-38.976335)" id="layer2" style="display:inline">
+    <path d="m 12.880344,91.5 0,100.75 95.968786,0 0,-69.78125 26.5,0 0,-30.96875 -26.5,0 -2.59375,0 -93.375036,0 z" id="rect4311" style="color:#000000;fill:#00a3e8;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <path d="m 174.4375,48.0625 0,6.84375 -39.09375,0 0,67.5625 14.53125,0 0,15.5625 91.875,0 0,-15.5625 13.59375,0 8.375,0 20.71875,0 0,-37.25 -20.71875,0 0,-30.3125 -38.625,0 0,-6.84375 -50.65625,0 z" id="rect4315" style="color:#000000;fill:#b97a57;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <path d="m 537.5,93.40625 0,28.69958 22.40625,0 0,69.43447 98.96875,0 0,-69.43447 0,-11.44897 0,-17.25061 -121.375,0 z" id="rect5095" style="color:#000000;fill:#ed1b24;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <path d="m 317.375,75.6875 0,5.75 -4.4375,0 0,3.78125 -28.5,0 0,106.34375 73.09375,0 9.78125,0 19.3125,0 0,-106.34375 -19.3125,0 -7.75,0 0,-3.78125 -4.4375,0 0,-5.75 -37.75,0 z" id="rect5101" style="color:#000000;fill:#23b14d;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <path d="m 448.09375,48.0625 0,6.84375 -39.125,0 0,30.3125 -22.34375,0 0,37.25 29.09375,0 14.90625,0 0,9.71875 26.21875,0 0,3.21875 34.125,0 0,-3.21875 26.21875,0 0,-9.71875 11.9375,0 8.375,0 0,-37.25 0,-30.3125 -38.875,0 0,-6.84375 -50.53125,0 z" id="rect5109" style="color:#000000;fill:#b6c083;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <path d="m 357.46875,191.5625 0,37 -2.59375,0 0,117.15625 2.59375,0 26.46875,0 2.59375,0 0,-4.09375 50.5,0 0,3.28125 11.875,0 0,5.40625 48.375,0 0,-5.40625 11.875,0 0,-3.28125 50.84375,0 0,4.09375 31.6875,0 0,-117.15625 -2.59375,0 0,-37 -26.5,0 0,37 -2.59375,0 0,24.5 -50.65625,0 0,-10.40625 -20.25,0 0,-11.59375 -32,0 0,11.59375 -20.28125,0 0,10.40625 -50.28125,0 0,-24.5 -2.59375,0 0,-37 -26.46875,0 z" id="rect5121" style="color:#000000;fill:#d2f332;fill-opacity:1;stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"></path>
+    <text x="50.998672" y="146.5088" id="text5180" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="50.998672" y="146.5088" id="tspan5182" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">A</tspan></text>
+    <text x="192.44991" y="96.263573" id="text5184" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="192.44991" y="96.263573" id="tspan5186" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">B</tspan></text>
+    <text x="462.79105" y="96.263573" id="text5188" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="462.79105" y="96.263573" id="tspan5190" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">D</tspan></text>
+    <text x="326.80124" y="146.5088" id="text5192" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="326.80124" y="146.5088" id="tspan5194" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">C</tspan></text>
+    <text x="606.97296" y="146.5088" id="text5196" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="606.97296" y="146.5088" id="tspan5198" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">E</tspan></text>
+    <text x="462.79105" y="301.06747" id="text5200" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="462.79105" y="301.06747" id="tspan5202" style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold">F</tspan></text>
+  </g>
+  <g transform="translate(0,-38.976335)" id="layer3" style="display:inline">
+    <text x="11.130188" y="253.10802" id="text5212" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="11.130188" y="253.10802" id="tspan5214" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">Building A-B-C-D: Hungarian National Gallery</tspan><tspan x="11.130188" y="273.10803" id="tspan5216" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">Building E: Budapest History Museum</tspan><tspan x="11.130188" y="293.10803" id="tspan5218" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">Building F: National Széchényi Library</tspan></text>
+  </g>
+  <g transform="translate(0,-38.976335)" id="layer4" style="display:none">
+    <text x="11.130188" y="253.10802" id="text5212-1" xml:space="preserve" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"><tspan x="11.130188" y="253.10802" id="tspan5214-1" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">A–B–C–D épület: Magyar Nemzeti Galéria</tspan><tspan x="11.130188" y="273.10803" id="tspan5216-2" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">E épület: Budapesti Történeti Múzeum</tspan><tspan x="11.130188" y="293.10803" id="tspan5218-2" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">F épület: Országos Széchényi Könyvtár</tspan></text>
+  </g>
+</svg>
