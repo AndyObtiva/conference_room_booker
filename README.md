@@ -1,4 +1,4 @@
-# Conference Room Booker (Cycle.js Example)
+# Conference Room Booker ([Cycle.js](http://cycle.js.org) Example)
 
 ![Floor Plan](https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/floor_plan.png "Conference Room Floor Plan")
 
@@ -11,7 +11,7 @@
 
 ## Non-Functional Requirements
 
-- Build with Cycle.js for learning purposes
+- Build with [Cycle.js](http://cycle.js.org) for learning purposes
 
 ## Project Pre-requisites
 
