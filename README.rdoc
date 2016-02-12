@@ -1,5 +1,7 @@
 = Conference Room Booker (Cycle.js Example)
 
+{Floor Plan}[rdoc-image:https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/app/assets/images/floor_plan.svg]
+
 == Requirements
 
 - See office conference room layout
