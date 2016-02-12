@@ -1,4 +1,4 @@
-# Conference Room Booker ([Cycle.js](http://cycle.js.org) Example)
+# Conference Room Booker (in [Cycle.js](http://cycle.js.org))
 
 ![Floor Plan](https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/floor_plan.png "Conference Room Floor Plan")
 
