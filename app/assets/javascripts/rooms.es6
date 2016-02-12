@@ -1,36 +1,29 @@
 import Rx from 'rx';
 import Cycle from '@cycle/core';
-import {makeDOMDriver, div, form, label, input, h1, h2, img} from '@cycle/dom';
-
+import {makeDOMDriver, hJSX, div, p, label, input, h1, h2, img} from '@cycle/dom';
+import roomCollection from './roomCollection.es6';
+import floorPlanView from './floorPlanView.es6'
 
 function main(drivers) {
 
-  var initialSink = Rx.Observable.of({time: 0, name: 'Anonymous', room: 'Empty'});
+  var initialSink = Rx.Observable.of({time: 0, room: 'N/A'});
 
   var timeSink = Rx.Observable.interval(1000).
     map(i => {return {time: (i+1)};});
 
-  var nameSink = drivers.DOM.select('#name').events('keyup').
-    map(ev => ev.target.value).
-    map(name => {return {name: name};});
+  var messageSink = initialSink.merge(timeSink);
 
-  var messageSink = initialSink.merge(timeSink).merge(nameSink);
-
-  var roomNames = ['A', 'B', 'D', 'C', 'E', 'F']
-  var rooms = ["#text5180", "#text5184", "#text5188", "#text5192", "#text5196", "#text5200"];
-  for (var i = 0; i < 6; i++) {
-    ((roomNumber) => {
-      messageSink = messageSink.merge(
-        drivers.IMAGE.select(rooms[roomNumber]).events('click').map(ev => {console.log(ev); return {room: roomNames[roomNumber]};})
-      );
-    })(i);
-  }
-
+  roomCollection.forEach((room) => {
+    messageSink = messageSink.merge(
+      drivers.DOM.select(room.id + "," + room.textId).events('click').map(ev => {
+        return {room: room.name};
+      })
+    );
+  });
 
   messageSink = messageSink.scan((prev, curr) => {
     return {
       time: ('time' in curr) ? curr['time'] : prev['time'],
-      name: ('name' in curr) ? curr['name'] : prev['name'],
       room: ('room' in curr) ? curr['room'] : prev['room'],
     };
   });
@@ -38,12 +31,11 @@ function main(drivers) {
   const sinks = {
     DOM: messageSink.map(message =>
       div([
-        form([
-          h1('Cycle.js Example - Hello Human Time'),
-          label('Enter Name:'),
-          input({type: 'text', id: 'name', value: message['name']})
-        ]),
-        h2('#message', 'Hello ' + message['name'] + '! ' + message['time'] + ' seconds elapsed at room ' + message['room'] + '.')
+        floorPlanView(message),
+        h1('Conference Room Booker'),
+        p('Please start by clicking on a conference room.'),
+        h2('Room booked: ' + message['room']),
+        h2('' + message['time'] + ' seconds elapsed.'),
       ])
     )
   };
@@ -52,8 +44,7 @@ function main(drivers) {
 }
 
 const drivers = {
-  DOM: makeDOMDriver('#app'),
-  IMAGE: makeDOMDriver('svg#svg2')
+  DOM: makeDOMDriver('#app')
 };
 
 Cycle.run(main, drivers);
