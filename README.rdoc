@@ -1,28 +1,35 @@
-== README
+= Conference Room Booker (Cycle.js Example)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== Requirements
 
-Things you may want to cover:
+- See office conference room layout
+- Visually book a conference room
+- Immediately see if somebody else books a room
+- Room gradually changes color as time passes until free
 
-* Ruby version
+== Non-Functional Requirements
 
-* System dependencies
+- Build with Cycle.js for learning purposes
 
-* Configuration
+== Project Pre-requisites
 
-* Database creation
+- Node.js (for use with Babel)
+- Babel ES 6/2015 Support
+- Browserify
+- RVM
+- Bundler
 
-* Database initialization
+== Setup Instructions
 
-* How to run the test suite
+- npm install (must have Node.js)
+- npm install rx @cycle/core @cycle/dom
+- gem install bundler && bundle
+- rake db:migrate (sqlite is fine for now)
 
-* Services (job queues, cache servers, search engines, etc.)
+== Contributors
 
-* Deployment instructions
+- Andy Maleh (author)
 
-* ...
+== License
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+MIT
