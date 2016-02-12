@@ -1,6 +1,6 @@
 # Conference Room Booker (Cycle.js Example)
 
-![Floor Plan](https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/app/assets/images/floor_plan.svg "Conference Room Floor Plan")
+![Floor Plan](https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/floor_plan.png "Conference Room Floor Plan")
 
 ## Requirements
 
