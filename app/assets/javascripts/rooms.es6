@@ -29,7 +29,7 @@ function main(drivers) {
   });
 
   messageSource = messageSource.scan((prev, curr) => {
-    var time = prev['time'];
+    var time = ('duration' in curr) ? curr['duration'] : prev['time'];
     var room = ('room' in curr) ? curr['room'] : prev['room'];
     var duration = ('duration' in curr) ? curr['duration'] : prev['duration'];
     if (room != ROOM_NONE && 'timeDelta' in curr) time = prev['time'] - curr['timeDelta'];
