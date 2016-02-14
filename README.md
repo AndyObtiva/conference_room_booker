@@ -2,6 +2,8 @@
 
 ![Floor Plan](https://raw.githubusercontent.com/AndyObtiva/conference_room_booker/master/floor_plan.png "Conference Room Floor Plan")
 
+[Watch Conference Room Booker YouTube Teaser](https://www.youtube.com/watch?v=akyJmX5Rdss)
+
 ## Requirements
 
 - See office conference room layout
