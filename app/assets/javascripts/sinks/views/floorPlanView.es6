@@ -3,7 +3,7 @@ var svg = CycleDOM.svg;
 
 
 module.exports = (message => {
-  var roomOpacity = (room) => (message['room'] == room ? (message['time'])/message['duration'] : 0);
+  var roomOpacity = (index) => (message['room'] == index ? (message['time'])/message['duration'] : 0);
   var roomOffset = (index) => (message['rooms'][index]['name'].length-1)*4;
   return svg("svg#svg2", {
       "xmlns:dc": "http://purl.org/dc/elements/1.1/",
@@ -78,27 +78,27 @@ module.exports = (message => {
     }, [
       svg("path#rect4311", {
           "d": "m 12.880344,91.5 0,100.75 95.968786,0 0,-69.78125 26.5,0 0,-30.96875 -26.5,0 -2.59375,0 -93.375036,0 z",
-          "style": "color:#000000;fill:#00a3e8;fill-opacity:" + roomOpacity('A') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#00a3e8;fill-opacity:" + roomOpacity(0) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("path#rect4315", {
           "d": "m 174.4375,48.0625 0,6.84375 -39.09375,0 0,67.5625 14.53125,0 0,15.5625 91.875,0 0,-15.5625 13.59375,0 8.375,0 20.71875,0 0,-37.25 -20.71875,0 0,-30.3125 -38.625,0 0,-6.84375 -50.65625,0 z",
-          "style": "color:#000000;fill:#b97a57;fill-opacity:" + roomOpacity('B') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#b97a57;fill-opacity:" + roomOpacity(1) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("path#rect5095", {
           "d": "m 537.5,93.40625 0,28.69958 22.40625,0 0,69.43447 98.96875,0 0,-69.43447 0,-11.44897 0,-17.25061 -121.375,0 z",
-          "style": "color:#000000;fill:#ed1b24;fill-opacity:" + roomOpacity('E') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#ed1b24;fill-opacity:" + roomOpacity(4) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("path#rect5101", {
           "d": "m 317.375,75.6875 0,5.75 -4.4375,0 0,3.78125 -28.5,0 0,106.34375 73.09375,0 9.78125,0 19.3125,0 0,-106.34375 -19.3125,0 -7.75,0 0,-3.78125 -4.4375,0 0,-5.75 -37.75,0 z",
-          "style": "color:#000000;fill:#23b14d;fill-opacity:" + roomOpacity('C') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#23b14d;fill-opacity:" + roomOpacity(2) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("path#rect5109", {
           "d": "m 448.09375,48.0625 0,6.84375 -39.125,0 0,30.3125 -22.34375,0 0,37.25 29.09375,0 14.90625,0 0,9.71875 26.21875,0 0,3.21875 34.125,0 0,-3.21875 26.21875,0 0,-9.71875 11.9375,0 8.375,0 0,-37.25 0,-30.3125 -38.875,0 0,-6.84375 -50.53125,0 z",
-          "style": "color:#000000;fill:#b6c083;fill-opacity:" + roomOpacity('D') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#b6c083;fill-opacity:" + roomOpacity(3) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("path#rect5121", {
           "d": "m 357.46875,191.5625 0,37 -2.59375,0 0,117.15625 2.59375,0 26.46875,0 2.59375,0 0,-4.09375 50.5,0 0,3.28125 11.875,0 0,5.40625 48.375,0 0,-5.40625 11.875,0 0,-3.28125 50.84375,0 0,4.09375 31.6875,0 0,-117.15625 -2.59375,0 0,-37 -26.5,0 0,37 -2.59375,0 0,24.5 -50.65625,0 0,-10.40625 -20.25,0 0,-11.59375 -32,0 0,11.59375 -20.28125,0 0,10.40625 -50.28125,0 0,-24.5 -2.59375,0 0,-37 -26.46875,0 z",
-          "style": "color:#000000;fill:#d2f332;fill-opacity:" + roomOpacity('F') + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+          "style": "color:#000000;fill:#d2f332;fill-opacity:" + roomOpacity(5) + ";stroke:#595959;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
       }),
       svg("text#text5180", {
           "x": "50.998672",

@@ -7,6 +7,7 @@ var input = CycleDOM.input;
 
 module.exports = (message => {
   var elapsing = message['time'] < message['duration'];
+  var bookedRoom = message['rooms'][message['room']] || {name: ''};
   return div([
     h1('Conference Room Booker (in Cycle.js)'),
     p('Please enter duration needed and book a room by clicking on it.'),
@@ -14,6 +15,6 @@ module.exports = (message => {
       input({id: 'duration', disabled: elapsing ? 'disabled' : null, value: elapsing ? message['time'] : message['duration']}),
       ' seconds remaining.'
     ]),
-    h2('Room booked: ' + message['room']),
+    h2('Room booked: ' + bookedRoom.name),
   ])
 });
