@@ -4,6 +4,7 @@ var svg = CycleDOM.svg;
 
 module.exports = (message => {
   var roomOpacity = (room) => (message['room'] == room ? (message['time'])/message['duration'] : 0);
+  var roomOffset = (index) => (message['rooms'][index]['name'].length-1)*4;
   return svg("svg#svg2", {
       "xmlns:dc": "http://purl.org/dc/elements/1.1/",
       "xmlns:cc": "http://creativecommons.org/ns#",
@@ -105,60 +106,60 @@ module.exports = (message => {
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5182", {
-          "x": "50.998672",
+          "x": (50.998672 - roomOffset(0)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "A" ]) ]),
+      }, [ message['rooms'][0]['name'] ]) ]),
       svg("text#text5184", {
           "x": "192.44991",
           "y": "96.263573",
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5186", {
-          "x": "192.44991",
+          "x": (192.44991 - roomOffset(1)).toString(),
           "y": "96.263573",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "B" ]) ]),
+      }, [ message['rooms'][1]['name'] ]) ]),
       svg("text#text5188", {
           "x": "462.79105",
           "y": "96.263573",
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5190", {
-          "x": "462.79105",
+          "x": (462.79105 - roomOffset(3)).toString(),
           "y": "96.263573",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "D" ]) ]),
+      }, [ message['rooms'][3]['name'] ]) ]),
       svg("text#text5192", {
           "x": "326.80124",
           "y": "146.5088",
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5194", {
-          "x": "326.80124",
+          "x": (326.80124 - roomOffset(2)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "C" ]) ]),
+      }, [ message['rooms'][2]['name'] ]) ]),
       svg("text#text5196", {
           "x": "606.97296",
           "y": "146.5088",
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5198", {
-          "x": "606.97296",
+          "x": (606.97296 - roomOffset(4)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "E" ]) ]),
+      }, [ message['rooms'][4]['name'] ]) ]),
       svg("text#text5200", {
           "x": "462.79105",
           "y": "301.06747",
           "xml:space": "preserve",
           "style": "font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#595959;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
       }, [ svg("tspan#tspan5202", {
-          "x": "462.79105",
+          "x": (462.79105 - roomOffset(5)).toString(),
           "y": "301.06747",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ "F" ]) ])
+      }, [ message['rooms'][5]['name'] ]) ])
     ])
   ])
 });
