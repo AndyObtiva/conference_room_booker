@@ -3,7 +3,7 @@ var svg = CycleDOM.svg;
 
 
 module.exports = (message => {
-  var roomOpacity = (index) => (message['room'] == index ? (message['time'])/message['duration'] : 0);
+  var roomOpacity = (index) => (message['bookedRoom'] == index ? (message['time'])/message['duration'] : 0);
   var roomOffset = (index) => (message['rooms'][index]['name'].length-1)*4;
   return svg("svg#svg2", {
       "xmlns:dc": "http://purl.org/dc/elements/1.1/",

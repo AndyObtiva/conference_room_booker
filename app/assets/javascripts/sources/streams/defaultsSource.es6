@@ -6,5 +6,5 @@ module.exports = (drivers) =>
     rooms: [{name: ' '}, {name: ' '}, {name: ' '}, {name: ' '}, {name: ' '}, {name: ' '}],
     duration: CONSTANTS.DURATION_DEFAULT,
     time: CONSTANTS.DURATION_DEFAULT,
-    room: CONSTANTS.ROOM_NONE
+    bookedRoom: CONSTANTS.ROOM_NONE
   });

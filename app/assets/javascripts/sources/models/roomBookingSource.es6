@@ -33,8 +33,8 @@ var roomCollection = [
 
 module.exports = (drivers) =>
   roomCollection.
-    map((room) =>    
+    map((room) =>
         drivers.DOM.select(room.id + "," + room.textId).events('click').map(ev => {
-          return {room: room.index};
+          return {bookedRoom: room.index};
         })
     ).reduce((output, singleRoomBookingSource) => output.merge(singleRoomBookingSource));

@@ -24,18 +24,18 @@ var main = (drivers) => {
 
   messageSource = messageSource.scan((prev, curr) => {
     var time = ('duration' in curr) ? curr['duration'] : prev['time'];
-    var room = ('room' in curr) ? curr['room'] : prev['room'];
+    var room = ('bookedRoom' in curr) ? curr['bookedRoom'] : prev['bookedRoom'];
     var duration = ('duration' in curr) ? curr['duration'] : prev['duration'];
     var rooms = ('rooms' in curr) ? curr['rooms'] : prev['rooms'];
     if (room != CONSTANTS.ROOM_NONE && 'timeDelta' in curr) time = prev['time'] - curr['timeDelta'];
-    if ('room' in curr) time = duration;
+    if ('bookedRoom' in curr) time = duration;
     if (time <= 0) {
       time = duration;
       room = CONSTANTS.ROOM_NONE;
     }
     return {
       time: time,
-      room: room,
+      bookedRoom: room,
       duration: duration,
       rooms: rooms,
     };
