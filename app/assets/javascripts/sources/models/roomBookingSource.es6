@@ -1,4 +1,4 @@
-module.exports = [
+var roomCollection = [
   {
     index: 0,
     id: '#rect4311', //path element
@@ -30,3 +30,11 @@ module.exports = [
     textId: '#text5200'
   },
 ]
+
+module.exports = (drivers) =>
+  roomCollection.
+    map((room) =>    
+        drivers.DOM.select(room.id + "," + room.textId).events('click').map(ev => {
+          return {room: room.index};
+        })
+    ).reduce((output, singleRoomBookingSource) => output.merge(singleRoomBookingSource));
