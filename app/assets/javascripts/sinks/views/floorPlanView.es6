@@ -5,6 +5,7 @@ var svg = CycleDOM.svg;
 module.exports = (message => {
   var roomOpacity = (index) => (message['bookedRoom'] == index ? (message['time'])/message['duration'] : 0);
   var roomOffset = (index) => (message['rooms'][index]['name'].length-1)*4;
+  var roomBooker = (index) => (message['booker'] && message['bookedRoom'] == index ? '(' + message['booker'] + ')' : '')
   return svg("svg#svg2", {
       "xmlns:dc": "http://purl.org/dc/elements/1.1/",
       "xmlns:cc": "http://creativecommons.org/ns#",
@@ -109,7 +110,13 @@ module.exports = (message => {
           "x": (50.998672 - roomOffset(0)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][0]['name'] ]) ]),
+      }, [ message['rooms'][0]['name'] ]),
+      svg("tspan#tspan5194", {
+          "x": (50.998672 - roomOffset(0)).toString(),
+          "y": "166.5088",
+          "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+      }, [ roomBooker(0) ])
+    ]),
       svg("text#text5184", {
           "x": "192.44991",
           "y": "96.263573",
@@ -119,7 +126,13 @@ module.exports = (message => {
           "x": (192.44991 - roomOffset(1)).toString(),
           "y": "96.263573",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][1]['name'] ]) ]),
+      }, [ message['rooms'][1]['name'] ]),
+          svg("tspan#tspan5194", {
+              "x": (192.44991 - roomOffset(1)).toString(),
+              "y": "116.263573",
+              "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+      }, [ roomBooker(1) ])
+    ]),
       svg("text#text5188", {
           "x": "462.79105",
           "y": "96.263573",
@@ -129,7 +142,13 @@ module.exports = (message => {
           "x": (462.79105 - roomOffset(3)).toString(),
           "y": "96.263573",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][3]['name'] ]) ]),
+      }, [ message['rooms'][3]['name'] ]),
+           svg("tspan#tspan5194", {
+          "x": (462.79105 - roomOffset(3)).toString(),
+          "y": "116.263573",
+          "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+        }, [ roomBooker(3) ])
+    ]),
       svg("text#text5192", {
           "x": "326.80124",
           "y": "146.5088",
@@ -139,7 +158,13 @@ module.exports = (message => {
           "x": (326.80124 - roomOffset(2)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][2]['name'] ]) ]),
+      }, [ message['rooms'][2]['name'] ]),
+          svg("tspan#tspan5194", {
+              "x": (326.80124 - roomOffset(2)).toString(),
+              "y": "166.5088",
+              "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+      }, [ roomBooker(2) ])
+     ]),
       svg("text#text5196", {
           "x": "606.97296",
           "y": "146.5088",
@@ -149,7 +174,13 @@ module.exports = (message => {
           "x": (606.97296 - roomOffset(4)).toString(),
           "y": "146.5088",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][4]['name'] ]) ]),
+      }, [ message['rooms'][4]['name'] ]),
+      svg("tspan#tspan5194", {
+          "x": (606.97296 - roomOffset(4)).toString(),
+          "y": "166.5088",
+          "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+  }, [ roomBooker(4) ])
+    ]),
       svg("text#text5200", {
           "x": "462.79105",
           "y": "301.06747",
@@ -159,7 +190,13 @@ module.exports = (message => {
           "x": (462.79105 - roomOffset(5)).toString(),
           "y": "301.06747",
           "style": "font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-      }, [ message['rooms'][5]['name'] ]) ])
+      }, [ message['rooms'][5]['name'] ]),
+          svg("tspan#tspan5194", {
+          "x": (462.79105 - roomOffset(5)).toString(),
+          "y": "321.06747",
+          "style": "font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#595959;fill-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+        }, [ roomBooker(5) ])
+    ])
     ])
   ])
 });

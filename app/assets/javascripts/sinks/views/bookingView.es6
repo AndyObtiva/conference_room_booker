@@ -12,6 +12,10 @@ module.exports = (message => {
     h1('Conference Room Booker (in Cycle.js)'),
     p('Please enter duration needed and book a room by clicking on it.'),
     h2([
+      'Booker: ',
+      input({id: 'booker', disabled: elapsing ? 'disabled' : null, value: elapsing ? message['booker'] : message['booker']}),
+    ]),
+    h2([
       input({id: 'duration', disabled: elapsing ? 'disabled' : null, value: elapsing ? message['time'] : message['duration']}),
       ' seconds remaining.'
     ]),
