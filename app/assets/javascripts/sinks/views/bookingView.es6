@@ -1,4 +1,5 @@
 var CycleDOM = require('@cycle/dom');
+var a = CycleDOM.a;
 var div = CycleDOM.div;
 var p = CycleDOM.p;
 var h1 = CycleDOM.h1;
@@ -19,6 +20,9 @@ module.exports = (message => {
       input({id: 'duration', disabled: elapsing ? 'disabled' : null, value: elapsing ? message['time'] : message['duration']}),
       ' seconds remaining.'
     ]),
-    h2('Room booked: ' + bookedRoom.name),
+    h2([
+      'Room booked: ' + bookedRoom.name + ' ',
+      a({id: 'cancel', href: 'javascript:null', style: elapsing ? 'display: inline;' : 'display: none;'}, '(Cancel)')
+    ]),
   ])
 });
